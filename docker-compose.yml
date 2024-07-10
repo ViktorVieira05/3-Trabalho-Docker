@@ -7,7 +7,7 @@ services:
       MYSQL_ROOT_PASSWORD: 1305
       MYSQL_DATABASE: mercado
     ports:
-      - "3307:3306"  # Mapeia a porta 3306 do container para a porta 3307 do host
+      - "3307:3306" 
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 
